@@ -9,6 +9,18 @@
 |     5 class       |         89%       |   96%      |        95%            |
 
 
+Here is an example of how to download the Inception V4 checkpoint:
+
+```
+$ cd AIA_project
+$ CHECKPOINT_DIR=/log/pre_trained
+$ mkdir ${CHECKPOINT_DIR}
+$ wget http://download.tensorflow.org/models/inception_v4_2016_09_09.tar.gz
+$ tar -xvf inception_v4_2016_09_09.tar.gz
+$ mv inception_v4.ckpt ${CHECKPOINT_DIR}
+$ rm inception_v4_2016_08_28.tar.gz
+```
+
 # Inception V4 
 ## Run code
     python train.py \
