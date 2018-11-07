@@ -60,11 +60,6 @@ def main():
     if not os.path.exists(log_dir):
         os.mkdir(log_dir)
 
-    # init_op = (tf.global_variables_initializer(),
-    #            tf.local_variables_initializer())
-    # with tf.Session() as sess:
-    #     sess.run(init_op)
-
     with tf.Graph().as_default() as graph:
         tf.logging.set_verbosity(tf.logging.INFO)
         # TRAIN MODEL
@@ -183,12 +178,6 @@ def main():
                                      num_batches_per_epoch + 1, epochs)
                         logging.info('Current Streaming Accuracy: %s', sess.run([accuracy]))
 
-                        # optionally, print your logits and predictions for a sanity check that things are going fine.
-                        # logits_value, probabilities_value, predictions_value = sess.run(
-                        #     [logits, probabilities, predictions])
-                        # print('logits: \n', logits_value)
-                        # print('Probabilities: \n', probabilities_value)
-                        # print('predictions: \n', predictions_value)
                     loss, accuracy_value = train_step(
                         sess, train_op, global_step)
 
