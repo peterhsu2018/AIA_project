@@ -3,10 +3,10 @@
    and InceptionV4 to prdict normal/abnormal or black/broken/fungus/insect/normal
 
 
-| number of class   |  Inception V4     | Resnet50   | Inception-Resnet v2   |
+| number of classes |  Inception V4     | Resnet50   | Inception-Resnet v2   |
 | :---------------: | :---------------: | :--------: | :-------------------: |
-|     2 class       |         92%       |   95%      |        97%            |
-|     5 class       |         89%       |   96%      |        95%            |
+|     2             |         92%       |   95%      |        97%            |
+|     5             |         89%       |   96%      |        95%            |
 
 
 Here is an example of how to download the Inception V4 checkpoint:
